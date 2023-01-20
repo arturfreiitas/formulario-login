@@ -1,32 +1,87 @@
-.App {
-  text-align: center;
+
+* { 
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	-ms-box-sizing:border-box; 
+	-o-box-sizing:border-box; 
+	box-sizing:border-box; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body { 
+	width: 100%;
+	height:100%;
+	font-family: 'Open Sans', sans-serif;
+  background: #092756;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(100deg, #1e3457, #3263b0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.botao {
+    
+width:100%;
+padding: 0.6em 1em;
+cursor: pointer;
+background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+text-decoration: none;
+font-size:1.1em; 
+color: #fff;
+border-radius: 6px;
+border: none; 
+}
+
+.botao {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: box-shadow, transform;
+transition-property: box-shadow, transform;
+}
+
+.login { 
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -150px 0 0 -150px;
+width:300px;
+height:300px;
+}
+
+
+.formbox h2 { 
+color:#fff; 
+text-shadow: 0 0 10px rgba(0,0,0,0.3); 
+letter-spacing:1px; 
+text-align:center; 
+
+}
+
+.campos {
+  width: 100%;
+  margin-bottom: 10px;
+  background: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #213b65;
+  border-radius: 6px;
+  transition: .5s;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  input:focus { background-color: #f0f0f0; }
+  
+  
 
-.App-link {
-  color: #61dafb;
-}
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
